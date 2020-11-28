@@ -23,6 +23,12 @@ public class ClarinetTest {
     }
 
     @Test
+    public void canSetMaterial(){
+        clarinet.setMaterial("plastic");
+        assertEquals("plastic", clarinet.getMaterial());
+    }
+
+    @Test
     public void canSetFamily(){
         clarinet.setFamily("Brass");
         assertEquals("Brass", clarinet.getFamily());
