@@ -34,6 +34,17 @@ public class ViolinTest {
     }
 
     @Test
+    public void canGetType(){
+        assertEquals("Alto", violin.getType());
+    }
+
+    @Test
+    public void canSetType(){
+        violin.setType("Electric");
+        assertEquals("Electric", violin.getType());
+    }
+
+    @Test
     public void violinCanPlay(){
         assertEquals("Violin is playing jazz", violin.play("jazz"));
     }

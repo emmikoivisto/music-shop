@@ -6,7 +6,6 @@ public class Trombone extends Instrument implements IPlay  {
         this.valveType = valveType;
     }
 
-
     public String play(String title) {
         return "Trombone is playing " + title;
     }

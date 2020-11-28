@@ -18,9 +18,4 @@ public class Clarinet extends Instrument implements IPlay{
         return "Clarinet is playing " + title;
     }
 
-//    public int calculateMarkup(){
-//        return super.getSellingPrice() - super.getBuyingPrice();
-//    }
-
-
 }
