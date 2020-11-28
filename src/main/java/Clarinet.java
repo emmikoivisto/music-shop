@@ -1,4 +1,4 @@
-public class Clarinet extends Instrument implements IPlay{
+public class Clarinet extends Instrument implements IPlay, ISell{
     private String type;
 
 
@@ -17,6 +17,10 @@ public class Clarinet extends Instrument implements IPlay{
 
     public String play(String title) {
         return "Clarinet is playing " + title;
+    }
+
+    public int calculateMarkup(){
+        return super.getSellingPrice() - super.getBuyingPrice();
     }
 
 

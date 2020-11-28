@@ -3,18 +3,18 @@ import java.util.ArrayList;
 public class Shop {
 
     private String name;
-    private ArrayList<Instrument> stock;
+    private ArrayList<ISell> stock;
 
     public Shop(String name){
         this.name = name;
-        this.stock = new ArrayList<Instrument>();
+        this.stock = new ArrayList<>();
     }
 
     public int getStockCount(){
         return this.stock.size();
     }
 
-    public void addInstrument(Instrument instrument){
+    public void addInstrument(ISell instrument){
         this.stock.add(instrument);
     }
 

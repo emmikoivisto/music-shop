@@ -1,3 +1,3 @@
 public interface ISell {
-    int calculateMarkup(Shop shop);
+    int calculateMarkup();
 }
