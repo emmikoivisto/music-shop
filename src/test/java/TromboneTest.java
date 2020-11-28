@@ -52,4 +52,10 @@ public class TromboneTest {
         trombone.setBuyingPrice(1000);
         assertEquals(1000, trombone.getBuyingPrice());
     }
+
+    @Test
+    public void canSetMaterial(){
+        trombone.setMaterial("wood");
+        assertEquals("wood", trombone.getMaterial());
+    }
 }
