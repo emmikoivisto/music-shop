@@ -9,7 +9,7 @@ public class ClarinetTest {
 
     @Before
     public void before(){
-        clarinet = new Clarinet("Woodwind", "Wood", "wooden", "B");
+        clarinet = new Clarinet("Woodwind", "Wood", "wooden", 450, 500, "B");
     }
 
     @Test
@@ -38,5 +38,14 @@ public class ClarinetTest {
         assertEquals("Clarinet is playing jazz", clarinet.play("jazz"));
     }
 
+    @Test
+    public void canGetSellingPrice(){
+        assertEquals(500, clarinet.getSellingPrice());
+    }
 
+    @Test
+    public void canSetSellingPrice(){
+        clarinet.setSellingPrice(800);
+        assertEquals(800, clarinet.getSellingPrice());
+    }
 }

@@ -2,8 +2,8 @@ public class Violin extends Instrument implements IPlay{
 
     private String type;
 
-    public Violin(String family, String material, String colour, String type){
-        super(family, material, colour);
+    public Violin(String family, String material, String colour, int buyingPrice, int sellingPrice, String type){
+        super(family, material, colour, buyingPrice, sellingPrice);
         this.type = type;
     }
 

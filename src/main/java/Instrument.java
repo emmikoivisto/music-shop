@@ -2,11 +2,15 @@ public abstract class Instrument {
     private String family;
     private String material;
     private String colour;
+    private int buyingPrice;
+    private int sellingPrice;
 
-    public Instrument(String family, String material, String colour){
+    public Instrument(String family, String material, String colour, int buyingPrice, int sellingPrice){
         this.family = family;
         this.material = material;
         this.colour = colour;
+        this.buyingPrice = buyingPrice;
+        this.sellingPrice = sellingPrice;
     }
 
     public String getFamily() {
@@ -31,5 +35,21 @@ public abstract class Instrument {
 
     public void setColour(String colour) {
         this.colour = colour;
+    }
+
+    public int getBuyingPrice() {
+        return buyingPrice;
+    }
+
+    public void setBuyingPrice(int buyingPrice) {
+        this.buyingPrice = buyingPrice;
+    }
+
+    public int getSellingPrice() {
+        return sellingPrice;
+    }
+
+    public void setSellingPrice(int sellingPrice) {
+        this.sellingPrice = sellingPrice;
     }
 }

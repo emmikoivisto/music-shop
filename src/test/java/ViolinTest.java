@@ -9,7 +9,7 @@ public class ViolinTest {
 
     @Before
     public void before(){
-       violin = new Violin("String", "Wood", "wooden", "Alto");
+       violin = new Violin("String", "Wood", "wooden", 670, 800, "Alto");
     }
 
     @Test

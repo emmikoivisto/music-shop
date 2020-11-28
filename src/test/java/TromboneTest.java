@@ -8,7 +8,7 @@ public class TromboneTest {
 
     @Before
     public void before(){
-        trombone = new Trombone("Brass", "brass", "brassy", "rotary");
+        trombone = new Trombone("Brass", "brass", "brassy", 900, 1500, "rotary");
     }
 
     @Test

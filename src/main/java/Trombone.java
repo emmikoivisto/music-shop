@@ -1,8 +1,8 @@
 public class Trombone extends Instrument implements IPlay  {
     private String valveType;
 
-    public Trombone(String family, String material, String colour, String valveType){
-        super(family, material, colour);
+    public Trombone(String family, String material, String colour, int buyingPrice, int sellingPrice, String valveType){
+        super(family, material, colour, buyingPrice, sellingPrice);
         this.valveType = valveType;
     }
 
