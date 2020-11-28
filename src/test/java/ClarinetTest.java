@@ -45,6 +45,12 @@ public class ClarinetTest {
     }
 
     @Test
+    public void canSetBuyingPrice(){
+        clarinet.setBuyingPrice(1000);
+        assertEquals(1000, clarinet.getBuyingPrice());
+    }
+
+    @Test
     public void clarinetCanPlay(){
         assertEquals("Clarinet is playing jazz", clarinet.play("jazz"));
     }
