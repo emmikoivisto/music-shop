@@ -42,4 +42,8 @@ public class TromboneTest {
         assertEquals("Trombone is playing jazz", trombone.play("jazz"));
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(600, trombone.calculateMarkup());
+    }
 }

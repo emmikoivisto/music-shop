@@ -1,4 +1,4 @@
-public abstract class Instrument {
+public abstract class Instrument implements ISell{
     private String family;
     private String material;
     private String colour;
@@ -51,5 +51,9 @@ public abstract class Instrument {
 
     public void setSellingPrice(int sellingPrice) {
         this.sellingPrice = sellingPrice;
+    }
+
+    public int calculateMarkup(){
+        return sellingPrice - buyingPrice;
     }
 }
