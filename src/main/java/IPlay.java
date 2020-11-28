@@ -1,3 +1,3 @@
 public interface IPlay {
-    String play(String sound);
+    String play(String title);
 }

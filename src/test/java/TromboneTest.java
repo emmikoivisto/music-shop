@@ -16,4 +16,30 @@ public class TromboneTest {
         assertEquals("Brass", trombone.getFamily());
     }
 
+    @Test
+    public void canGetMaterial(){
+        assertEquals("brass", trombone.getMaterial());
+    }
+
+    @Test
+    public void canGetColour(){
+        assertEquals("brassy", trombone.getColour());
+    }
+
+    @Test
+    public void canGetValveType(){
+        assertEquals("rotary", trombone.getValveType());
+    }
+
+    @Test
+    public void canSetValveType(){
+        trombone.setValveType("axel");
+        assertEquals("axel", trombone.getValveType());
+    }
+
+    @Test
+    public void tromboneCanPlay(){
+        assertEquals("Trombone is playing jazz", trombone.play("jazz"));
+    }
+
 }
