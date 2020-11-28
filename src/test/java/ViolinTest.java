@@ -45,6 +45,12 @@ public class ViolinTest {
     }
 
     @Test
+    public void canSetMaterial(){
+        violin.setMaterial("oak");
+        assertEquals("oak", violin.getMaterial());
+    }
+
+    @Test
     public void canSetBuyingPrice(){
         violin.setBuyingPrice(1000);
         assertEquals(1000, violin.getBuyingPrice());

@@ -58,4 +58,5 @@ public class TromboneTest {
         trombone.setMaterial("wood");
         assertEquals("wood", trombone.getMaterial());
     }
+
 }
