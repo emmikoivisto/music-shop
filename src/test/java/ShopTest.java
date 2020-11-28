@@ -36,4 +36,13 @@ public class ShopTest {
         shop.addInstrument(violin);
         assertEquals(3, shop.getStockCount());
     }
+
+    @Test
+    public void canSellInstrument(){
+        shop.addInstrument(clarinet);
+        shop.addInstrument(trombone);
+        shop.addInstrument(violin);
+        shop.sellInstrument(clarinet);
+        assertEquals(2, shop.getStockCount());
+    }
 }

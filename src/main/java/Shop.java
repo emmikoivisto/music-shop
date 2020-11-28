@@ -18,6 +18,10 @@ public class Shop {
         this.stock.add(instrument);
     }
 
+    public void sellInstrument(ISell instrument){
+        this.stock.remove(instrument);
+    }
+
     public String getName() {
         return name;
     }
