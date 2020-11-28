@@ -46,4 +46,10 @@ public class TromboneTest {
     public void canCalculateMarkup(){
         assertEquals(600, trombone.calculateMarkup());
     }
+
+    @Test
+    public void canSetBuyingPrice(){
+        trombone.setBuyingPrice(1000);
+        assertEquals(1000, trombone.getBuyingPrice());
+    }
 }
