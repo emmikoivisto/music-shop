@@ -34,6 +34,17 @@ public class ClarinetTest {
     }
 
     @Test
+    public void canGetType(){
+        assertEquals("B", clarinet.getType());
+    }
+
+    @Test
+    public void canSetType(){
+        clarinet.setType("Bass");
+        assertEquals("Bass", clarinet.getType());
+    }
+
+    @Test
     public void clarinetCanPlay(){
         assertEquals("Clarinet is playing jazz", clarinet.play("jazz"));
     }

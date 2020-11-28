@@ -1,7 +1,6 @@
 public class Clarinet extends Instrument implements IPlay{
     private String type;
 
-
     public Clarinet(String family, String material, String colour, int buyingPrice, int sellingPrice, String type){
         super(family, material, colour, buyingPrice, sellingPrice);
         this.type = type;
